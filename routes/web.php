@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+/******************************************************
+* ALL AJAX ROUTES ARE HERE
+* ****************************************************
+*/
+Route::name('ajax.')
+	->prefix('ajax')
+	->namespace('Ajax')
+	->group(base_path('routes/ajax.php'));
+
+
