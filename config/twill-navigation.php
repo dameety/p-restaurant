@@ -5,22 +5,14 @@ return [
         'title' => 'Work',
         'route' => 'admin.work.projects.index',
         'primary_navigation' => [
-            'projects' => [
-                'title' => 'Projects',
+            'bookings' => [
+                'title' => 'Booking',
                 'module' => true,
             ],
-            'clients' => [
-                'title' => 'Clients',
+            'menus' => [
+                'title' => 'Menu',
                 'module' => true,
-            ],
-            'industries' => [
-                'title' => 'Industries',
-                'module' => true,
-            ],
-            'studios' => [
-                'title' => 'Studios',
-                'module' => true,
-            ],
+            ]
         ],
     ],
 ];
