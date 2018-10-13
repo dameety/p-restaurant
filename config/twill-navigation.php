@@ -6,11 +6,11 @@ return [
         'route' => 'admin.work.projects.index',
         'primary_navigation' => [
             'bookings' => [
-                'title' => 'Booking',
+                'title' => 'Bookings',
                 'module' => true,
             ],
             'menus' => [
-                'title' => 'Menu',
+                'title' => 'Menus',
                 'module' => true,
             ]
         ],
