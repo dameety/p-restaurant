@@ -1,18 +1,33 @@
 <?php
 
 return [
-    'work' => [
-        'title' => 'Work',
-        'route' => 'admin.work.projects.index',
+//    'work' => [
+//        'title' => 'Work',
+//        'route' => 'admin.work.projects.index',
+//        'primary_navigation' => [
+//            'bookings' => [
+//                'title' => 'Bookings',
+//                'module' => true,
+//            ],
+//            'menus' => [
+//                'title' => 'Menus',
+//                'module' => true,
+//            ]
+//        ],
+//    ],
+
+    'bookings' => [
+        'title' => 'Bookings',
+        'module' => true,
         'primary_navigation' => [
-            'bookings' => [
+            'create' => [
                 'title' => 'Bookings',
-                'module' => true,
-            ],
-            'menus' => [
-                'title' => 'Menus',
-                'module' => true,
+                'route' => 'admin.bookings.create',
             ]
         ],
     ],
+    'menus' => [
+        'title' => 'Menus',
+        'module' => true,
+    ]
 ];
