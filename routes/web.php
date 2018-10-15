@@ -9,7 +9,7 @@ $router->group([
     'as' => 'front.'
 ], function (Router $route) {
 
-    $route->get('/', 'HomeController@index')->name('front.index');
+    $route->get('/', 'HomeController@index')->name('page.home');
     $route->get('/menu', 'PagesController@menu')->name('page.menu');
     $route->get('/about', 'PagesController@about')->name('page.about');
     $route->get('/contact', 'PagesController@contact')->name('page.contact');

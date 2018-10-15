@@ -4,8 +4,8 @@
         <div class="wrap_header trans-0-3">
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+                <a href="{{route('front.page.home')}}">
+                    <img src="{{asset('front/images/icons/logo.png')}}" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
                 </a>
             </div>
 
@@ -14,31 +14,23 @@
                 <nav class="menu">
                     <ul class="main_menu">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="{{route('front.page.home')}}">Home</a>
                         </li>
 
                         <li>
-                            <a href="menu.html">Menu</a>
+                            <a href="{{route('front.page.menu')}}">Menu</a>
                         </li>
 
                         <li>
-                            <a href="reservation.html">Reservation</a>
+                            <a href="{{route('front.page.reservation')}}">Reservation</a>
                         </li>
 
                         <li>
-                            <a href="gallery.html">Gallery</a>
+                            <a href="{{route('front.page.about')}}">About</a>
                         </li>
 
                         <li>
-                            <a href="about.html">About</a>
-                        </li>
-
-                        <li>
-                            <a href="blog.html">Blog</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="{{route('front.page.contact')}}">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -46,7 +38,6 @@
 
             <!-- Social -->
             <div class="social flex-w flex-l-m p-r-20">
-                <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
 

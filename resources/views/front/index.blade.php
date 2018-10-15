@@ -1,5 +1,7 @@
 @extends('front.layout.master')
 
+@section('title', 'Home')
+
 @section('content')
     <!-- Slide1 -->
     <section class="section-slide">
