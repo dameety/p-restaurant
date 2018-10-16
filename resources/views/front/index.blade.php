@@ -7,7 +7,7 @@
     <section class="section-slide">
         <div class="wrap-slick1">
             <div class="slick1">
-                <div class="item-slick1 item1-slick1" style="background-image: url(images/slide1-01.jpg);">
+                <div class="item-slick1 item1-slick1" style="background-image: url({{asset('front/images/slide1-01.jpg')}});">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
 							Welcome to
@@ -26,7 +26,7 @@
                     </div>
                 </div>
 
-                <div class="item-slick1 item2-slick1" style="background-image: url(images/master-slides-02.jpg);">
+                <div class="item-slick1 item2-slick1" style="background-image: url({{asset('front/images/slide1-02.jpg')}});">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
 							Welcome to
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <div class="item-slick1 item3-slick1" style="background-image: url(images/master-slides-01.jpg);">
+                <div class="item-slick1 item3-slick1" style="background-image: url({{asset('front/images/slide1-01.jpg')}});">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
 							Welcome to
@@ -97,7 +97,7 @@
 
                 <div class="col-md-6 p-b-30">
                     <div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                        <img src="images/our-story-01.jpg" alt="IMG-OUR">
+                        <img src="{{asset('front/images/slide1-02.jpg')}}" alt="IMG-OUR">
                     </div>
                 </div>
             </div>
@@ -106,7 +106,8 @@
 
     <!-- Intro -->
     <section class="section-intro">
-        <div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/bg-intro-01.jpg);">
+        <div class="header-intro parallax100 t-center p-t-135 p-b-158"
+             style="background-image: url({{asset('front/images/bg-intro-01.jpg')}});">
 			<span class="tit2 p-l-15 p-r-15">
 				Discover
 			</span>
@@ -123,7 +124,7 @@
                         <!-- Block1 -->
                         <div class="blo1">
                             <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                                <a href="#"><img src="images/intro-01.jpg" alt="IMG-INTRO"></a>
+                                <a href="#"><img src="{{asset('front/images/intro-01.jpg')}}" alt="IMG-INTRO"></a>
                             </div>
 
                             <div class="wrap-text-blo1 p-t-35">
@@ -147,7 +148,7 @@
                         <!-- Block1 -->
                         <div class="blo1">
                             <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                                <a href="#"><img src="images/intro-02.jpg" alt="IMG-INTRO"></a>
+                                <a href="#"><img src="{{asset('front/images/intro-02.jpg')}}" alt="IMG-INTRO"></a>
                             </div>
 
                             <div class="wrap-text-blo1 p-t-35">
@@ -171,7 +172,7 @@
                         <!-- Block1 -->
                         <div class="blo1">
                             <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                                <a href="#"><img src="images/intro-04.jpg" alt="IMG-INTRO"></a>
+                                <a href="#"><img src="{{asset('front/images/intro-04.jpg')}}" alt="IMG-INTRO"></a>
                             </div>
 
                             <div class="wrap-text-blo1 p-t-35">
@@ -215,7 +216,7 @@
                         <div class="col-sm-6">
                             <!-- Item our menu -->
                             <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-                                <img src="images/our-menu-01.jpg" alt="IMG-MENU">
+                                <img src="{{asset('front/images/our-menu-01.jpg')}}" alt="IMG-MENU">
 
                                 <!-- Button2 -->
                                 <a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
@@ -227,7 +228,7 @@
                         <div class="col-sm-6">
                             <!-- Item our menu -->
                             <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-                                <img src="images/our-menu-05.jpg" alt="IMG-MENU">
+                                <img src="{{asset('front/images/our-menu-05.jpg')}}" alt="IMG-MENU">
 
                                 <!-- Button2 -->
                                 <a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
@@ -239,7 +240,7 @@
                         <div class="col-12">
                             <!-- Item our menu -->
                             <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-                                <img src="images/our-menu-13.jpg" alt="IMG-MENU">
+                                <img src="{{asset('front/images/our-menu-13.jpg')}}" alt="IMG-MENU">
 
                                 <!-- Button2 -->
                                 <a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
@@ -255,7 +256,7 @@
                         <div class="col-12">
                             <!-- Item our menu -->
                             <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-                                <img src="images/our-menu-08.jpg" alt="IMG-MENU">
+                                <img src="{{asset('front/images/our-menu-08.jpg')}}" alt="IMG-MENU">
 
                                 <!-- Button2 -->
                                 <a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
@@ -267,7 +268,7 @@
                         <div class="col-12">
                             <!-- Item our menu -->
                             <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-                                <img src="images/our-menu-10.jpg" alt="IMG-MENU">
+                                <img src="{{asset('front/images/our-menu-10.jpg')}}" alt="IMG-MENU">
 
                                 <!-- Button2 -->
                                 <a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
@@ -279,7 +280,7 @@
                         <div class="col-12">
                             <!-- Item our menu -->
                             <div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-                                <img src="images/our-menu-16.jpg" alt="IMG-MENU">
+                                <img src="{{asset('front/images/our-menu-16.jpg')}}" alt="IMG-MENU">
 
                                 <!-- Button2 -->
                                 <a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
@@ -299,7 +300,7 @@
     <section class="section-event">
         <div class="wrap-slick2">
             <div class="slick2">
-                <div class="item-slick2 item1-slick2" style="background-image: url(images/bg-event-01.jpg);">
+                <div class="item-slick2 item1-slick2" style="background-image: url({{asset('front/images/bg-event-01.jpg')}});">
                     <div class="wrap-content-slide2 p-t-115 p-b-208">
                         <div class="container">
                             <!-- - -->
@@ -316,7 +317,7 @@
                             <!-- Block2 -->
                             <div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="zoomIn">
                                 <!-- Pic block2 -->
-                                <a href="#" class="wrap-pic-blo2 bg1-blo2" style="background-image: url(images/event-02.jpg);">
+                                <a href="#" class="wrap-pic-blo2 bg1-blo2" style="background-image: url( {{asset('front/images/event-02.jpg')}} );">
                                     <div class="time-event size10 txt6 effect1">
 										<span class="txt-effect1 flex-c-m t-center">
 											08:00 PM Tuesday - 21 November 2018
@@ -386,7 +387,7 @@
                     </div>
                 </div>
 
-                <div class="item-slick2 item2-slick2" style="background-image: url(images/bg-event-02.jpg);">
+                <div class="item-slick2 item2-slick2" style="background-image: url( {{asset('front/images/bg-event-02.jpg')}} );">
                     <div class="wrap-content-slide2 p-t-115 p-b-208">
                         <div class="container">
                             <!-- - -->
@@ -403,7 +404,8 @@
                             <!-- Block2 -->
                             <div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="fadeInDown">
                                 <!-- Pic block2 -->
-                                <a href="#" class="wrap-pic-blo2 bg2-blo2" style="background-image: url(images/event-06.jpg);">
+                                <a href="#" class="wrap-pic-blo2 bg2-blo2"
+                                    style="background-image: url( {{asset('front/images/event-06.jpg')}} );">
                                     <div class="time-event size10 txt6 effect1">
 										<span class="txt-effect1 flex-c-m">
 											08:00 PM Tuesday - 21 November 2018
@@ -473,7 +475,8 @@
                     </div>
                 </div>
 
-                <div class="item-slick2 item3-slick2" style="background-image: url(images/bg-event-04.jpg);">
+                <div class="item-slick2 item3-slick2"
+                     style="background-image: url( {{asset('front/images/bg-event-04.jpg')}} );">
                     <div class="wrap-content-slide2 p-t-115 p-b-208">
                         <div class="container">
                             <!-- - -->
@@ -490,7 +493,8 @@
                             <!-- Block2 -->
                             <div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="rotateInUpLeft">
                                 <!-- Pic block2 -->
-                                <a href="#" class="wrap-pic-blo2 bg3-blo2" style="background-image: url(images/event-01.jpg);">
+                                <a href="#" class="wrap-pic-blo2 bg3-blo2"
+                                   style="background-image: url( {{asset('front/images/event-01.jpg')}} );">
                                     <div class="time-event size10 txt6 effect1">
 										<span class="txt-effect1 flex-c-m">
 											08:00 PM Tuesday - 21 November 2018
@@ -689,7 +693,7 @@
 
                 <div class="col-lg-6 p-b-30 p-t-18">
                     <div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-                        <img src="images/booking-01.jpg" alt="IMG-OUR">
+                        <img src="{{asset('front/images/booking-01.jpg')}}" alt="IMG-OUR">
                     </div>
                 </div>
             </div>
@@ -716,7 +720,7 @@
                     <div class="wrap-content-slide3 p-b-50 p-t-50">
                         <div class="container">
                             <div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-                                <img src="images/avatar-01.jpg" alt="IGM-AVATAR">
+                                <img src="{{asset('front/images/avatar-01.jpg')}}" alt="IGM-AVATAR">
                             </div>
 
                             <div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
@@ -744,7 +748,7 @@
                     <div class="wrap-content-slide3 p-b-50 p-t-50">
                         <div class="container">
                             <div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-                                <img src="images/avatar-04.jpg" alt="IGM-AVATAR">
+                                <img src="{{asset('front/images/avatar-04.jpg')}}" alt="IGM-AVATAR">
                             </div>
 
                             <div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
@@ -772,7 +776,7 @@
                     <div class="wrap-content-slide3 p-b-50 p-t-50">
                         <div class="container">
                             <div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-                                <img src="images/avatar-05.jpg" alt="IGM-AVATAR">
+                                <img src="{{asset('front/images/avatar-05.jpg')}}" alt="IGM-AVATAR">
                             </div>
 
                             <div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
@@ -804,7 +808,7 @@
 
 
     <!-- Video -->
-    <section class="section-video parallax100" style="background-image: url(images/bg-cover-video-02.jpg);">
+    <section class="section-video parallax100" style="background-image: url({{asset('front/images/bg-cover-video-02.jpg')}});">
         <div class="content-video t-center p-t-225 p-b-250">
 			<span class="tit2 p-l-15 p-r-15">
 				Discover
@@ -818,109 +822,6 @@
                 <div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
                     <i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
                 </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Blog -->
-    <section class="section-blog bg-white p-t-115 p-b-123">
-        <div class="container">
-            <div class="title-section-ourmenu t-center m-b-22">
-				<span class="tit2 t-center">
-					Latest News
-				</span>
-
-                <h3 class="tit5 t-center m-t-2">
-                    The Blog
-                </h3>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 p-t-30">
-                    <!-- Block1 -->
-                    <div class="blo1">
-                        <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-                            <a href="blog-detail.html"><img src="images/blog-01.jpg" alt="IMG-INTRO"></a>
-
-                            <div class="time-blog">
-                                21 Dec 2017
-                            </div>
-                        </div>
-
-                        <div class="wrap-text-blo1 p-t-35">
-                            <a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-                                    Best Places for Wine
-                                </h4></a>
-
-                            <p class="m-b-20">
-                                Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-                            </p>
-
-                            <a href="blog-detail.html" class="txt4">
-                                Continue Reading
-                                <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-t-30">
-                    <!-- Block1 -->
-                    <div class="blo1">
-                        <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-                            <a href="blog-detail.html"><img src="images/blog-02.jpg" alt="IMG-INTRO"></a>
-
-                            <div class="time-blog">
-                                15 Dec 2017
-                            </div>
-                        </div>
-
-                        <div class="wrap-text-blo1 p-t-35">
-                            <a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-                                    Eggs and Cheese
-                                </h4></a>
-
-                            <p class="m-b-20">
-                                Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat
-                            </p>
-
-                            <a href="blog-detail.html" class="txt4">
-                                Continue Reading
-                                <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-t-30">
-                    <!-- Block1 -->
-                    <div class="blo1">
-                        <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-                            <a href="blog-detail.html"><img src="images/blog-03.jpg" alt="IMG-INTRO"></a>
-
-                            <div class="time-blog">
-                                12 Dec 2017
-                            </div>
-                        </div>
-
-                        <div class="wrap-text-blo1 p-t-35">
-                            <a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-                                    Style the Wedding Party
-                                </h4></a>
-
-                            <p class="m-b-20">
-                                Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
-                            </p>
-
-                            <a href="blog-detail.html" class="txt4">
-                                Continue Reading
-                                <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
