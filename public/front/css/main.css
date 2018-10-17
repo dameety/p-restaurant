@@ -585,6 +585,10 @@ input[type="date" i] {
   color: #222222;
 }
 
+.main_menu > li.active_menu > a {
+  color: #ec1d25;
+}
+
 .main_menu > li:hover > a {
   color: #ec1d25;
   text-decoration: none;
