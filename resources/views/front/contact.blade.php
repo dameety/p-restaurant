@@ -18,7 +18,7 @@
         <!-- Map -->
         <div class="container">
 
-            <map></map>
+            <contact_map></contact_map>
 
         </div>
 

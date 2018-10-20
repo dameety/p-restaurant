@@ -23,8 +23,9 @@
                         contact@site.com
                     </li>
                 </ul>
+            </div>
 
-                <!-- - -->
+            <div class="col-sm-6 col-md-4 p-t-50">
                 <h4 class="txt13 m-b-32">
                     Opening Times
                 </h4>
@@ -38,53 +39,6 @@
                         Every Day
                     </li>
                 </ul>
-            </div>
-
-            <div class="col-sm-6 col-md-4 p-t-50">
-                <!-- - -->
-                <h4 class="txt13 m-b-33">
-                    Latest twitter
-                </h4>
-
-                <div class="m-b-25">
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-                    <a href="#" class="txt15">
-                        @colorlib
-                    </a>
-
-                    <p class="txt14 m-b-18">
-                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                        <a href="#" class="txt15">
-                            https://buff.ly/2zaSfAQ
-                        </a>
-                    </p>
-
-                    <span class="txt16">
-							21 Dec 2017
-						</span>
-                </div>
-
-                <div>
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-                    <a href="#" class="txt15">
-                        @colorlib
-                    </a>
-
-                    <p class="txt14 m-b-18">
-                        Activello is a good option. It has a slider built into that displays
-                        <a href="#" class="txt15">
-                            https://buff.ly/2zaSfAQ
-                        </a>
-                    </p>
-
-                    <span class="txt16">
-							21 Dec 2017
-						</span>
-                </div>
             </div>
 
             <div class="col-sm-6 col-md-4 p-t-50">
@@ -135,13 +89,6 @@
                         <img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
                     </a>
 
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-                        <img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
-                    </a>
-
-                    <a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-                        <img src="images/photo-gallery-thumb-12.jpg" alt="GALLERY">
-                    </a>
                 </div>
 
             </div>
