@@ -16,17 +16,3 @@ $router->group([
     $route->get('/reservation', 'PagesController@reservation')->name('page.reservation');
 
 });
-
-
-
-
-/******************************************************
-* ALL AJAX ROUTES ARE HERE
-* ****************************************************
-*/
-Route::name('ajax.')
-	->prefix('ajax')
-	->namespace('Ajax')
-	->group(base_path('routes/ajax.php'));
-
-

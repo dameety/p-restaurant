@@ -5,9 +5,12 @@ use Illuminate\Routing\Router;
 
 
 $router->group([
-
-        'middleware' => ['auth'],
+    
+        'namespace' => 'Ajax',
+        'as' => 'ajax.'
 
     ], function (Router $route) {
 
+    $route->post('enquiries/', 'EnquiriesController@store');
+    $route->post('reservations/', 'ReservationsController@store');
 });
