@@ -5,7 +5,8 @@
 
             <div class="logo">
                 <a href="{{route('front.page.home')}}">
-                    <img src="{{asset('front/images/icons/logo.png')}}" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+                    {{--<img src="{{asset('front/images/icons/logo.png')}}" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">--}}
+                    <img src="{{asset('front/images/icons/logo.png')}}" alt="IMG-LOGO" data-logofixed="{{asset('front/images/icons/logo2.png')}}">
                 </a>
             </div>
 
