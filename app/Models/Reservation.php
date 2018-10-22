@@ -42,6 +42,20 @@ class Reservation extends Model
         'published'
     ];
 
+    /**
+     * Validation rules
+     *
+     * @var array
+     */
+    public static $createRules = [
+        'email' => 'required',
+        'name' => 'required',
+        'phone' => 'required',
+        'date' => 'required',
+        'number_of_people' => 'required',
+        'time' => 'required'
+    ];
+
     // uncomment and modify this as needed if you use the HasMedias trait
     // public $mediasParams = [
     //     'cover' => [

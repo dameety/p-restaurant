@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Ajax;
 
 use App\Models\Reservation;
-use Illuminate\Http\Request;
 use App\Http\Controllers\AjaxController;
 use App\Repositories\ReservationRepository;
+use App\Http\Requests\Front\ReservationRequest;
 
 class ReservationsController extends AjaxController
 {
@@ -16,7 +16,7 @@ class ReservationsController extends AjaxController
         $this->reservationRepo = $reservationRepo;
     }
 
-    public function store(Request $request)
+    public function store(ReservationRequest $request)
     {
         $reservation = Reservation::create($request->all());
 
