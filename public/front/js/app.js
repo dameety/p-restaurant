@@ -1399,7 +1399,7 @@ window.Vue = __webpack_require__(36);
 
 Vue.component('special-signups', __webpack_require__(39));
 Vue.component('contact_form', __webpack_require__(45));
-Vue.component('map', __webpack_require__(50));
+Vue.component('contact_map', __webpack_require__(50));
 Vue.component('reservation_booking_form', __webpack_require__(55));
 
 var app = new Vue({
@@ -31196,7 +31196,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-479a2f41"
+var __vue_scopeId__ = "data-v-bad05872"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -31207,7 +31207,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/Map.vue"
+Component.options.__file = "resources/js/components/ContactMap.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -31216,9 +31216,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-479a2f41", Component.options)
+    hotAPI.createRecord("data-v-bad05872", Component.options)
   } else {
-    hotAPI.reload("data-v-479a2f41", Component.options)
+    hotAPI.reload("data-v-bad05872", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31239,13 +31239,13 @@ var content = __webpack_require__(52);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("f2cb896e", content, false, {});
+var update = __webpack_require__(3)("2159c6dc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-479a2f41\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Map.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-479a2f41\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Map.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bad05872\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ContactMap.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bad05872\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ContactMap.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -31318,7 +31318,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-479a2f41", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-bad05872", module.exports)
   }
 }
 
@@ -31408,7 +31408,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -31645,10 +31645,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['page']
+    props: ['page'],
 
+    data: function data() {
+        return {
+            newReservation: {
+                name: "",
+                time: "",
+                date: "",
+                phone: "",
+                email: "",
+                numberOfPeople: ""
+            }
+        };
+    },
+
+
+    methods: {
+        store: function store() {
+            axios.post('/ajax/reservations/store', this.newReservation).then(function (resp) {
+                alert(resp.data.message);
+            }).catch(function (err) {
+                alert(err.response.data.message);
+            });
+        }
+    }
 });
 
 /***/ }),
@@ -31661,212 +31685,739 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     this.page === "reservation"
-      ? _c("form", { staticClass: "wrap-form-reservation size22 m-l-r-auto" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _vm._m(2)
-        ])
+      ? _c(
+          "form",
+          {
+            staticClass: "wrap-form-reservation size22 m-l-r-auto",
+            on: {
+              submit: function($event) {
+                $event.preventDefault()
+                _vm.store()
+              }
+            }
+          },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n\t\t\t\t\t\t\t\t\tDate\n\t\t\t\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newReservation.date,
+                          expression: "newReservation.date"
+                        }
+                      ],
+                      staticClass:
+                        "my-calendar bo-rad-10 sizefull txt10 p-l-20",
+                      attrs: { type: "text", name: "date" },
+                      domProps: { value: _vm.newReservation.date },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.newReservation,
+                            "date",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("i", {
+                      staticClass:
+                        "btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18",
+                      attrs: { "aria-hidden": "true" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n\t\t\t\t\t\t\t\t\tTime\n\t\t\t\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.newReservation.time,
+                            expression: "newReservation.time"
+                          }
+                        ],
+                        staticClass: "selection-1",
+                        attrs: { name: "time" },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.newReservation,
+                              "time",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
+                        }
+                      },
+                      [
+                        _c("option", [_vm._v("9:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("9:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("10:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("10:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("11:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("11:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("12:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("12:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("13:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("13:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("14:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("14:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("15:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("15:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("16:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("16:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("17:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("17:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("18:00")])
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n\t\t\t\t\t\t\t\t\tPeople\n\t\t\t\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.newReservation.people,
+                            expression: "newReservation.people"
+                          }
+                        ],
+                        staticClass: "selection-1",
+                        attrs: { name: "people" },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.newReservation,
+                              "people",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
+                        }
+                      },
+                      [
+                        _c("option", [_vm._v("1 person")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("2 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("3 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("4 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("5 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("6 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("7 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("8 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("9 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("10 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("11 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("12 people")])
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n\t\t\t\t\t\t\t\t\tName\n\t\t\t\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newReservation.name,
+                          expression: "newReservation.name"
+                        }
+                      ],
+                      staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                      attrs: {
+                        type: "text",
+                        name: "name",
+                        placeholder: "Name"
+                      },
+                      domProps: { value: _vm.newReservation.name },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.newReservation,
+                            "name",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n\t\t\t\t\t\t\t\t\tPhone\n\t\t\t\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newReservation.phone,
+                          expression: "newReservation.phone"
+                        }
+                      ],
+                      staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                      attrs: {
+                        type: "text",
+                        name: "phone",
+                        placeholder: "Phone"
+                      },
+                      domProps: { value: _vm.newReservation.phone },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.newReservation,
+                            "phone",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n\t\t\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newReservation.email,
+                          expression: "newReservation.email"
+                        }
+                      ],
+                      staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                      attrs: {
+                        type: "text",
+                        name: "email",
+                        placeholder: "Email"
+                      },
+                      domProps: { value: _vm.newReservation.email },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.newReservation,
+                            "email",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(0)
+          ]
+        )
       : _vm._e(),
     _vm._v(" "),
     this.page === "home"
-      ? _c("form", { staticClass: "wrap-form-booking" }, [
-          _vm._m(3),
-          _vm._v(" "),
-          _vm._m(4)
-        ])
+      ? _c(
+          "form",
+          {
+            staticClass: "wrap-form-booking",
+            on: {
+              submit: function($event) {
+                $event.preventDefault()
+                _vm.store()
+              }
+            }
+          },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n\t\t\t\t\t\t\t\t\tDate\n\t\t\t\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newReservation.date,
+                          expression: "newReservation.date"
+                        }
+                      ],
+                      staticClass:
+                        "my-calendar bo-rad-10 sizefull txt10 p-l-20",
+                      attrs: { type: "text", name: "date" },
+                      domProps: { value: _vm.newReservation.date },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.newReservation,
+                            "date",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("i", {
+                      staticClass:
+                        "btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18",
+                      attrs: { "aria-hidden": "true" }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n                        Time\n                    ")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.newReservation.time,
+                            expression: "newReservation.time"
+                          }
+                        ],
+                        staticClass: "selection-1",
+                        attrs: { name: "time" },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.newReservation,
+                              "time",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
+                        }
+                      },
+                      [
+                        _c("option", [_vm._v("9:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("9:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("10:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("10:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("11:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("11:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("12:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("12:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("13:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("13:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("14:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("14:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("15:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("15:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("16:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("16:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("17:00")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("17:30")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("18:00")])
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v(
+                    "\n                        People\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.newReservation.numberOfPeople,
+                            expression: "newReservation.numberOfPeople"
+                          }
+                        ],
+                        staticClass: "selection-1",
+                        attrs: { name: "people" },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.newReservation,
+                              "numberOfPeople",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
+                        }
+                      },
+                      [
+                        _c("option", [_vm._v("1 person")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("2 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("3 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("4 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("5 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("6 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("7 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("8 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("9 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("10 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("11 people")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("12 people")])
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n                        Name\n                    ")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newReservation.name,
+                          expression: "newReservation.name"
+                        }
+                      ],
+                      staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                      attrs: {
+                        type: "text",
+                        name: "name",
+                        placeholder: "Name"
+                      },
+                      domProps: { value: _vm.newReservation.name },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.newReservation,
+                            "name",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v(
+                    "\n                        Phone\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newReservation.phone,
+                          expression: "newReservation.phone"
+                        }
+                      ],
+                      staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                      attrs: {
+                        type: "text",
+                        name: "phone",
+                        placeholder: "Phone"
+                      },
+                      domProps: { value: _vm.newReservation.phone },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.newReservation,
+                            "phone",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("span", { staticClass: "txt9" }, [
+                  _vm._v("\n\t\t\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23"
+                  },
+                  [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newReservation.email,
+                          expression: "newReservation.email"
+                        }
+                      ],
+                      staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                      attrs: {
+                        type: "text",
+                        name: "email",
+                        placeholder: "Email"
+                      },
+                      domProps: { value: _vm.newReservation.email },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.newReservation,
+                            "email",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(1)
+          ]
+        )
       : _vm._e()
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tDate\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23"
-          },
-          [
-            _c("input", {
-              staticClass: "my-calendar bo-rad-10 sizefull txt10 p-l-20",
-              attrs: { type: "text", name: "date" }
-            }),
-            _vm._v(" "),
-            _c("i", {
-              staticClass:
-                "btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18",
-              attrs: { "aria-hidden": "true" }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tTime\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c(
-              "select",
-              { staticClass: "selection-1", attrs: { name: "time" } },
-              [
-                _c("option", [_vm._v("9:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("9:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("10:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("10:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("11:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("11:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("12:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("12:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("13:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("13:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("14:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("14:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("15:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("15:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("16:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("16:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("17:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("17:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("18:00")])
-              ]
-            )
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tPeople\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c(
-              "select",
-              { staticClass: "selection-1", attrs: { name: "people" } },
-              [
-                _c("option", [_vm._v("1 person")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("2 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("3 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("4 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("5 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("6 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("7 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("8 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("9 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("10 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("11 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("12 people")])
-              ]
-            )
-          ]
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tName\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c("input", {
-              staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-              attrs: { type: "text", name: "name", placeholder: "Name" }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tPhone\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c("input", {
-              staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-              attrs: { type: "text", name: "phone", placeholder: "Phone" }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c("input", {
-              staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-              attrs: { type: "text", name: "email", placeholder: "Email" }
-            })
-          ]
-        )
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -31880,179 +32431,6 @@ var staticRenderFns = [
         },
         [_vm._v("\n                    Book Table\n                ")]
       )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-6" }, [
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tDate\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23"
-          },
-          [
-            _c("input", {
-              staticClass: "my-calendar bo-rad-10 sizefull txt10 p-l-20",
-              attrs: { type: "text", name: "date" }
-            }),
-            _vm._v(" "),
-            _c("i", {
-              staticClass:
-                "btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18",
-              attrs: { "aria-hidden": "true" }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tTime\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c(
-              "select",
-              { staticClass: "selection-1", attrs: { name: "time" } },
-              [
-                _c("option", [_vm._v("9:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("9:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("10:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("10:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("11:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("11:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("12:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("12:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("13:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("13:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("14:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("14:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("15:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("15:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("16:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("16:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("17:00")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("17:30")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("18:00")])
-              ]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tPeople\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c(
-              "select",
-              { staticClass: "selection-1", attrs: { name: "people" } },
-              [
-                _c("option", [_vm._v("1 person")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("2 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("3 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("4 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("5 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("6 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("7 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("8 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("9 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("10 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("11 people")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("12 people")])
-              ]
-            )
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-6" }, [
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tName\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c("input", {
-              staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-              attrs: { type: "text", name: "name", placeholder: "Name" }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tPhone\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c("input", {
-              staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-              attrs: { type: "text", name: "phone", placeholder: "Phone" }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c("span", { staticClass: "txt9" }, [
-          _vm._v("\n\t\t\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t\t\t")
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23" },
-          [
-            _c("input", {
-              staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-              attrs: { type: "text", name: "email", placeholder: "Email" }
-            })
-          ]
-        )
-      ])
     ])
   },
   function() {

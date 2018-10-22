@@ -7,10 +7,11 @@ use Illuminate\Routing\Router;
 $router->group([
     
         'namespace' => 'Ajax',
-        'as' => 'ajax.'
+        'as' => 'ajax.',
+        'prefix' => 'ajax'
 
     ], function (Router $route) {
 
-    $route->post('enquiries/', 'EnquiriesController@store');
-    $route->post('reservations/', 'ReservationsController@store');
+    $route->post('enquiries/store', 'EnquiriesController@store');
+    $route->post('reservations/store', 'ReservationsController@store');
 });
