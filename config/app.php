@@ -15,6 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'email' => 'support@fa-restaurant.com',
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
