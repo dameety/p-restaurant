@@ -8,7 +8,7 @@
 						</span>
 
                 <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                    <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name">
+                    <input v-model="newEnquiry.name" class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name">
                 </div>
             </div>
 
@@ -19,7 +19,7 @@
 						</span>
 
                 <div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                    <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
+                    <input v-model="newEnquiry.email" class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="email" placeholder="Email">
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
 						</span>
 
                 <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                    <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
+                    <input v-model="newEnquiry.phone" class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
                 <span class="txt9">
 							Message
 						</span>
-                <textarea class="bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3" name="message" placeholder="Message"></textarea>
+                <textarea v-model="newEquiry.body" class="bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3" name="message" placeholder="Message"></textarea>
             </div>
         </div>
 
@@ -54,7 +54,28 @@
 
 <script>
     export default {
+        data () {
+            return {
+                newEnquiry: {
+                    name: "",
+                    email: "",
+                    phone: "",
+                    body: ""
+                }
+            }
+        },
 
+        methods: {
+            store() {
+                axios.post('/ajax/enquiries', this.newEnquiry)
+                    .then((resp) => {
+                        alert(resp.data.message)
+                    })
+                    .catch((err) => {
+                        alert(err.response.data.message)
+                    })
+            }
+        }
     }
 </script>
 

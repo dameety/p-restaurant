@@ -12,6 +12,6 @@ $router->group([
 
     ], function (Router $route) {
 
-    $route->post('enquiries/store', 'EnquiriesController@store');
+    $route->post('enquiries', 'EnquiriesController@store');
     $route->post('reservations/store', 'ReservationsController@store');
 });
