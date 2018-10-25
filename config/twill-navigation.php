@@ -29,5 +29,10 @@ return [
     'menus' => [
         'title' => 'Menus',
         'module' => true,
+    ],
+    'Chefs' => [
+        'title' => 'Chefs',
+        'module' => true
     ]
+
 ];
