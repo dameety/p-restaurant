@@ -18,7 +18,10 @@
         <!-- Map -->
         <div class="container">
 
-            <contact_map></contact_map>
+            <contact_map
+                latitude="{{$latitude}}"
+                longitude="{{$longitude}}">
+            </contact_map>
 
         </div>
 

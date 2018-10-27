@@ -30996,7 +30996,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -31062,7 +31062,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            newEnquiry: {
+                name: "",
+                email: "",
+                phone: "",
+                body: ""
+            }
+        };
+    },
+
+
+    methods: {
+        store: function store() {
+            axios.post('/ajax/enquiries', this.newEnquiry).then(function (resp) {
+                alert(resp.data.message);
+            }).catch(function (err) {
+                alert(err.response.data.message);
+            });
+        }
+    }
+});
 
 /***/ }),
 /* 49 */
@@ -31072,100 +31094,166 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "form",
+    { staticClass: "wrap-form-reservation size22 m-l-r-auto" },
+    [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("span", { staticClass: "txt9" }, [
+            _vm._v("\n\t\t\t\t\t\t\tName\n\t\t\t\t\t\t")
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23" },
+            [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.newEnquiry.name,
+                    expression: "newEnquiry.name"
+                  }
+                ],
+                staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                attrs: { type: "text", name: "name", placeholder: "Name" },
+                domProps: { value: _vm.newEnquiry.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.newEnquiry, "name", $event.target.value)
+                  }
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("span", { staticClass: "txt9" }, [
+            _vm._v("\n\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t")
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23"
+            },
+            [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.newEnquiry.email,
+                    expression: "newEnquiry.email"
+                  }
+                ],
+                staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                attrs: { type: "email", name: "email", placeholder: "Email" },
+                domProps: { value: _vm.newEnquiry.email },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.newEnquiry, "email", $event.target.value)
+                  }
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("span", { staticClass: "txt9" }, [
+            _vm._v("\n\t\t\t\t\t\t\tPhone\n\t\t\t\t\t\t")
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23"
+            },
+            [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.newEnquiry.phone,
+                    expression: "newEnquiry.phone"
+                  }
+                ],
+                staticClass: "bo-rad-10 sizefull txt10 p-l-20",
+                attrs: { type: "text", name: "phone", placeholder: "Phone" },
+                domProps: { value: _vm.newEnquiry.phone },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.newEnquiry, "phone", $event.target.value)
+                  }
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12" }, [
+          _c("span", { staticClass: "txt9" }, [
+            _vm._v("\n\t\t\t\t\t\t\tMessage\n\t\t\t\t\t\t")
+          ]),
+          _vm._v(" "),
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.newEquiry.body,
+                expression: "newEquiry.body"
+              }
+            ],
+            staticClass:
+              "bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3",
+            attrs: { name: "message", placeholder: "Message" },
+            domProps: { value: _vm.newEquiry.body },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.newEquiry, "body", $event.target.value)
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "form",
-      { staticClass: "wrap-form-reservation size22 m-l-r-auto" },
-      [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("span", { staticClass: "txt9" }, [
-              _vm._v("\n\t\t\t\t\t\t\tName\n\t\t\t\t\t\t")
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23"
-              },
-              [
-                _c("input", {
-                  staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-                  attrs: { type: "text", name: "name", placeholder: "Name" }
-                })
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("span", { staticClass: "txt9" }, [
-              _vm._v("\n\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t")
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23"
-              },
-              [
-                _c("input", {
-                  staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-                  attrs: { type: "text", name: "email", placeholder: "Email" }
-                })
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("span", { staticClass: "txt9" }, [
-              _vm._v("\n\t\t\t\t\t\t\tPhone\n\t\t\t\t\t\t")
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23"
-              },
-              [
-                _c("input", {
-                  staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-                  attrs: { type: "text", name: "phone", placeholder: "Phone" }
-                })
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-12" }, [
-            _c("span", { staticClass: "txt9" }, [
-              _vm._v("\n\t\t\t\t\t\t\tMessage\n\t\t\t\t\t\t")
-            ]),
-            _vm._v(" "),
-            _c("textarea", {
-              staticClass:
-                "bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3",
-              attrs: { name: "message", placeholder: "Message" }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "wrap-btn-booking flex-c-m m-t-13" }, [
-          _c(
-            "button",
-            {
-              staticClass: "btn3 flex-c-m size36 txt11 trans-0-4",
-              attrs: { type: "submit" }
-            },
-            [_vm._v("\n                Submit\n            ")]
-          )
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "wrap-btn-booking flex-c-m m-t-13" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn3 flex-c-m size36 txt11 trans-0-4",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("\n                Submit\n            ")]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -31263,7 +31351,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.map[data-v-bad05872] {\n    height: 400px;\n}\n#google_map[data-v-bad05872] {\n    width: 100%;\n    height: 100%;\n    margin: 0 auto;\n}\n\n", ""]);
 
 // exports
 
@@ -31280,8 +31368,45 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: {
+        latitude: {
+            type: String
+        },
+        longitude: {
+            type: String
+        }
+    },
+
+    data: function data() {
+        return {
+            map: null
+        };
+    },
+    mounted: function mounted() {
+        this.initMap();
+    },
+
+
+    methods: {
+        initMap: function initMap() {
+            if (window.google === undefined) {
+                console.error('google maps library is not loaded!');
+                return;
+            }
+            var mapElement = document.getElementById('google_map');
+
+            var location = { lat: Number(this.latitude), lng: Number(this.longitude) };
+
+            var options = { zoom: 9, center: location };
+
+            this.map = new google.maps.Map(mapElement, options);
+        }
+    }
+});
 
 /***/ }),
 /* 54 */
@@ -31301,14 +31426,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "map bo8 bo-rad-10 of-hidden" }, [
       _c("div", {
         staticClass: "contact-map size37",
-        attrs: {
-          id: "google_map",
-          "data-map-x": "40.704644",
-          "data-map-y": "-74.011987",
-          "data-pin": "images/icons/icon-position-map.png",
-          "data-scrollwhell": "0",
-          "data-draggable": "1"
-        }
+        attrs: { id: "google_map" }
       })
     ])
   }

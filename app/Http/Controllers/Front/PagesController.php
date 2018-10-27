@@ -19,7 +19,10 @@ class PagesController extends Controller
 
     public function contact()
     {
-        return view('front.contact');
+        return view('front.contact', [
+            'latitude' => 1.0000,
+            'longitude' => 2.2123
+        ]);
     }
 
     public function reservation()
