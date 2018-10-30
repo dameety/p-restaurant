@@ -39,7 +39,7 @@
                 <span class="txt9">
 							Message
 						</span>
-                <textarea v-model="newEquiry.body" class="bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3" name="message" placeholder="Message"></textarea>
+                <textarea v-model="newEnquiry.body" class="bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3" name="message" placeholder="Message"></textarea>
             </div>
         </div>
 

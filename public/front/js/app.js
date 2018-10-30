@@ -31215,20 +31215,20 @@ var render = function() {
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.newEquiry.body,
-                expression: "newEquiry.body"
+                value: _vm.newEnquiry.body,
+                expression: "newEnquiry.body"
               }
             ],
             staticClass:
               "bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3",
             attrs: { name: "message", placeholder: "Message" },
-            domProps: { value: _vm.newEquiry.body },
+            domProps: { value: _vm.newEnquiry.body },
             on: {
               input: function($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.$set(_vm.newEquiry, "body", $event.target.value)
+                _vm.$set(_vm.newEnquiry, "body", $event.target.value)
               }
             }
           })
