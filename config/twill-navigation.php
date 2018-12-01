@@ -33,6 +33,11 @@ return [
     'chefs' => [
         'title' => 'Chefs',
         'module' => true
+    ],
+    'cars' => [
+        'title' => 'Cars',
+        'module' => true
     ]
+
 
 ];

@@ -2,18 +2,15 @@
 
 namespace App\Repositories;
 
-
-use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Repositories\Behaviors\HandleSlugs;
 use A17\Twill\Repositories\ModuleRepository;
-use App\Models\Booking;
+use App\Models\Car;
 
-class BookingRepository extends ModuleRepository
+class CarRepository extends ModuleRepository
 {
-//    use HasSlug;
     use HandleSlugs;
 
-    public function __construct(Booking $model)
+    public function __construct(Car $model)
     {
         $this->model = $model;
     }
