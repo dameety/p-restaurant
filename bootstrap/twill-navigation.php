@@ -18,19 +18,19 @@ return [
 
     'bookings' => [
         'title' => 'Bookings',
-        'module' => true
-//        'primary_navigation' => [
-//            'create' => [
-//                'title' => 'Bookings',
-//                'route' => 'admin.bookings.create',
-//            ]
-//        ],
+        'module' => true,
+        'primary_navigation' => [
+            'create' => [
+                'title' => 'Bookings',
+                'route' => 'admin.bookings.create',
+            ]
+        ],
     ],
     'menus' => [
         'title' => 'Menus',
         'module' => true,
     ],
-    'chefs' => [
+    'Chefs' => [
         'title' => 'Chefs',
         'module' => true
     ]

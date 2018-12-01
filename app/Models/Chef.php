@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-
 use A17\Twill\Models\Model;
 
 class Chef extends Model 

@@ -12,7 +12,7 @@ class Booking extends Model
     protected $fillable = [
         'published',
         'title',
-//        'description',
+        'description'
         // 'position',
         // 'public',
         // 'featured',
