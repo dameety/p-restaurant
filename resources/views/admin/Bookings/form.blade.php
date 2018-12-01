@@ -11,4 +11,15 @@
         'label' => 'Title',
         'maxlength' => 100
     ])
+    @formField('input', [
+        'translated' => true,
+        'name' => 'subtitle_translated',
+        'label' => 'Subtitle (translated)',
+        'maxlength' => 250,
+        'required' => true,
+        'note' => 'Hint message goes here',
+        'placeholder' => 'Placeholder goes here',
+        'type' => 'textarea',
+        'rows' => 3
+    ])
 @stop

@@ -27,4 +27,9 @@ class BookingController extends ModuleController
         'bulkEdit' => true,
         'editInModal' => true,
     ];
+
+    public function create()
+    {
+        dd('here');
+    }
 }
