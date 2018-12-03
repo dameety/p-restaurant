@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 
+mix.setPublicPath('public/front');
+
 mix.js('resources/js/app.js', 'public/front/js');
 
 if ( ! mix.inProduction() ) {

@@ -4,7 +4,7 @@
 
 Route::group([], function () {
     Route::module('menus');
-    Route::module('bookings');
+    Route::module('reservations');
     Route::module('chefs');
     Route::module('cars');
 });

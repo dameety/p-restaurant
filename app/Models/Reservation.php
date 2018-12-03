@@ -2,22 +2,23 @@
 
 namespace App\Models;
 
-
+use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Models\Model;
 
 class Reservation extends Model 
 {
+//    use HasSlug;
 
     protected $fillable = [
-        'published',
+//        'published',
         'title',
-        'description',
-        'name',
         'email',
-        'phone',
         'number_of_people',
         'date',
-        'time'
+        'time',
+        'name',
+        'phone'
+
         // 'position',
         // 'public',
         // 'featured',
@@ -33,14 +34,14 @@ class Reservation extends Model
     // ];
     
     // uncomment and modify this as needed if you use the HasSlug trait
-    // public $slugAttributes = [
-    //     'title',
-    // ];
+//     public $slugAttributes = [
+//         'title',
+//     ];
 
     // add checkbox fields names here (published toggle is itself a checkbox)
-    public $checkboxes = [
-        'published'
-    ];
+//    public $checkboxes = [
+////        'published'
+//    ];
 
     /**
      * Validation rules

@@ -16,15 +16,9 @@ return [
 //        ],
 //    ],
 
-    'bookings' => [
-        'title' => 'Bookings',
+    'reservations' => [
+        'title' => 'Reservations',
         'module' => true
-//        'primary_navigation' => [
-//            'create' => [
-//                'title' => 'Bookings',
-//                'route' => 'admin.bookings.create',
-//            ]
-//        ],
     ],
     'menus' => [
         'title' => 'Menus',

@@ -1397,7 +1397,6 @@ __webpack_require__(14);
 
 window.Vue = __webpack_require__(36);
 
-Vue.component('special-signups', __webpack_require__(39));
 Vue.component('contact_form', __webpack_require__(45));
 Vue.component('contact_map', __webpack_require__(50));
 Vue.component('reservation_booking_form', __webpack_require__(55));
@@ -30685,97 +30684,9 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(7)))
 
 /***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(40)
-}
-var normalizeComponent = __webpack_require__(4)
-/* script */
-var __vue_script__ = __webpack_require__(43)
-/* template */
-var __vue_template__ = __webpack_require__(44)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-74d3618d"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/SpecialSignups.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-74d3618d", Component.options)
-  } else {
-    hotAPI.reload("data-v-74d3618d", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(41);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(3)("ff5ceef0", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-74d3618d\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SpecialSignups.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-74d3618d\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SpecialSignups.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 39 */,
+/* 40 */,
+/* 41 */,
 /* 42 */
 /***/ (function(module, exports) {
 
@@ -30809,108 +30720,8 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "section-signup bg1-pattern p-t-85 p-b-85" },
-      [
-        _c(
-          "form",
-          { staticClass: "flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5" },
-          [
-            _c("span", { staticClass: "txt5 m-10" }, [
-              _vm._v("\n\t\t\t\tSpecials Sign up\n\t\t\t")
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10"
-              },
-              [
-                _c("input", {
-                  staticClass: "bo-rad-10 sizefull txt10 p-l-20",
-                  attrs: {
-                    type: "text",
-                    name: "email-address",
-                    placeholder: "Email Adrress"
-                  }
-                }),
-                _vm._v(" "),
-                _c("i", {
-                  staticClass: "fa fa-envelope ab-r-m m-r-18",
-                  attrs: { "aria-hidden": "true" }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn3 flex-c-m size18 txt11 trans-0-4 m-10",
-                attrs: { type: "submit" }
-              },
-              [_vm._v("\n                Sign-up\n            ")]
-            )
-          ]
-        )
-      ]
-    )
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-74d3618d", module.exports)
-  }
-}
-
-/***/ }),
+/* 43 */,
+/* 44 */,
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31776,7 +31587,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 date: "",
                 phone: "",
                 email: "",
-                numberOfPeople: ""
+                number_of_people: ""
             }
         };
     },
@@ -31818,7 +31629,7 @@ var render = function() {
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-md-4" }, [
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n\t\t\t\t\t\t\t\t\tDate\n\t\t\t\t\t\t\t\t")
+                  _vm._v("\n                    Date\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -31866,7 +31677,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "col-md-4" }, [
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n\t\t\t\t\t\t\t\t\tTime\n\t\t\t\t\t\t\t\t")
+                  _vm._v("\n                    Time\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -31955,7 +31766,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "col-md-4" }, [
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n\t\t\t\t\t\t\t\t\tPeople\n\t\t\t\t\t\t\t\t")
+                  _vm._v("\n                    People\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -31972,8 +31783,8 @@ var render = function() {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.newReservation.people,
-                            expression: "newReservation.people"
+                            value: _vm.newReservation.number_of_people,
+                            expression: "newReservation.number_of_people"
                           }
                         ],
                         staticClass: "selection-1",
@@ -31990,7 +31801,7 @@ var render = function() {
                               })
                             _vm.$set(
                               _vm.newReservation,
-                              "people",
+                              "number_of_people",
                               $event.target.multiple
                                 ? $$selectedVal
                                 : $$selectedVal[0]
@@ -32032,7 +31843,7 @@ var render = function() {
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-md-4" }, [
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n\t\t\t\t\t\t\t\t\tName\n\t\t\t\t\t\t\t\t")
+                  _vm._v("\n                    Name\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32077,7 +31888,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "col-md-4" }, [
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n\t\t\t\t\t\t\t\t\tPhone\n\t\t\t\t\t\t\t\t")
+                  _vm._v("\n                    Phone\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32122,7 +31933,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "col-md-4" }, [
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n\t\t\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t\t\t")
+                  _vm._v("\n                    Email\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32187,7 +31998,7 @@ var render = function() {
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-md-6" }, [
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n\t\t\t\t\t\t\t\t\tDate\n\t\t\t\t\t\t\t\t")
+                  _vm._v("\n                    Date\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32233,7 +32044,7 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n                        Time\n                    ")
+                  _vm._v("\n                    Time\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32320,9 +32131,7 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v(
-                    "\n                        People\n                    "
-                  )
+                  _vm._v("\n                    People\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32339,8 +32148,8 @@ var render = function() {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.newReservation.numberOfPeople,
-                            expression: "newReservation.numberOfPeople"
+                            value: _vm.newReservation.number_of_people,
+                            expression: "newReservation.number_of_people"
                           }
                         ],
                         staticClass: "selection-1",
@@ -32357,7 +32166,7 @@ var render = function() {
                               })
                             _vm.$set(
                               _vm.newReservation,
-                              "numberOfPeople",
+                              "number_of_people",
                               $event.target.multiple
                                 ? $$selectedVal
                                 : $$selectedVal[0]
@@ -32397,7 +32206,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "col-md-6" }, [
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n                        Name\n                    ")
+                  _vm._v("\n                    Name\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32440,9 +32249,7 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v(
-                    "\n                        Phone\n                    "
-                  )
+                  _vm._v("\n                    Phone\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32485,7 +32292,7 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("span", { staticClass: "txt9" }, [
-                  _vm._v("\n\t\t\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t\t\t")
+                  _vm._v("\n                    Email\n                ")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -32547,7 +32354,7 @@ var staticRenderFns = [
           staticClass: "btn3 flex-c-m size13 txt11 trans-0-4",
           attrs: { type: "submit" }
         },
-        [_vm._v("\n                    Book Table\n                ")]
+        [_vm._v("\n                Book Table\n            ")]
       )
     ])
   },
@@ -32562,7 +32369,7 @@ var staticRenderFns = [
           staticClass: "btn3 flex-c-m size13 txt11 trans-0-4",
           attrs: { type: "submit" }
         },
-        [_vm._v("\n                    Book Table\n                ")]
+        [_vm._v("\n                Book Table\n            ")]
       )
     ])
   }

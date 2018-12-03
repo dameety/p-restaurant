@@ -683,7 +683,5 @@
     </section>
 
 
-    <special-signups></special-signups>
-
 
 @endsection
