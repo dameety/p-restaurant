@@ -11,6 +11,12 @@
         'label' => 'Title',
         'maxlength' => 100
     ])
+    @formField('files', [
+        'name' => 'single_file_no_translate',
+        'label' => 'Single file (no translate)',
+        'note' => 'Add one file',
+        'noTranslate' => true
+    ])
     @formField('input', [
         'translated' => true,
         'name' => 'subtitle_translated',

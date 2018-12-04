@@ -2,16 +2,19 @@
 
 namespace App\Models;
 
+use A17\Twill\Models\Behaviors\HasMedias;
+use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Models\Model;
 
-class Chef extends Model 
+class Chef extends Model
 {
-    
+    use HasSlug, HasMedias;
 
     protected $fillable = [
         'published',
-        'title',
-        'description',
+        'name',
+        'role',
+        'bio',
         // 'position',
         // 'public',
         // 'featured',
@@ -27,9 +30,9 @@ class Chef extends Model
     // ];
     
     // uncomment and modify this as needed if you use the HasSlug trait
-    // public $slugAttributes = [
-    //     'title',
-    // ];
+     public $slugAttributes = [
+         'name',
+     ];
 
     // add checkbox fields names here (published toggle is itself a checkbox)
     public $checkboxes = [
@@ -37,24 +40,22 @@ class Chef extends Model
     ];
 
     // uncomment and modify this as needed if you use the HasMedias trait
-    // public $mediasParams = [
-    //     'cover' => [
-    //         'default' => [
-    //             [
-    //                 'name' => 'landscape',
-    //                 'ratio' => 16 / 9,
-    //             ],
-    //             [
-    //                 'name' => 'portrait',
-    //                 'ratio' => 3 / 4,
-    //             ],
-    //         ],
-    //         'mobile' => [
-    //             [
-    //                 'name' => 'mobile',
-    //                 'ratio' => 1,
-    //             ],
-    //         ],
-    //     ],
-    // ];
+    public $mediasParams = [
+        'header_img' => [
+            'default' => [
+                [
+                    'name' => 'landscape',
+                    'ratio' => 16 / 9,
+                ],
+            ],
+        ],
+        'profile_img' => [
+            'default' => [
+                [
+                    'name' => 'square',
+                    'ratio' => 1,
+                ],
+            ],
+        ],
+    ];
 }

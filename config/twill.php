@@ -22,10 +22,10 @@ return [
 
     'media_library' => [
         'disk' => 'libraries',
-        'endpoint_type' => env('MEDIA_LIBRARY_ENDPOINT_TYPE', 's3'),
-        'cascade_delete' => env('MEDIA_LIBRARY_CASCADE_DELETE', false),
+        'endpoint_type' => env('MEDIA_LIBRARY_ENDPOINT_TYPE', 'local'),
+        'cascade_delete' => env('MEDIA_LIBRARY_CASCADE_DELETE', true),
         'local_path' => env('MEDIA_LIBRARY_LOCAL_PATH'),
-        'image_service' => env('MEDIA_LIBRARY_IMAGE_SERVICE', 'A17\Twill\Services\MediaLibrary\Imgix'),
+        'image_service' => env('MEDIA_LIBRARY_IMAGE_SERVICE', 'A17\Twill\Services\MediaLibrary\Local'),
         'acl' => env('MEDIA_LIBRARY_ACL', 'private'),
         'filesize_limit' => env('MEDIA_LIBRARY_FILESIZE_LIMIT', 50),
         'allowed_extensions' => ['svg', 'jpg', 'gif', 'png', 'jpeg'],
@@ -33,10 +33,10 @@ return [
 
     'file_library' => [
         'disk' => 'libraries',
-        'endpoint_type' => env('FILE_LIBRARY_ENDPOINT_TYPE', 's3'),
-        'cascade_delete' => env('FILE_LIBRARY_CASCADE_DELETE', false),
+        'endpoint_type' => env('FILE_LIBRARY_ENDPOINT_TYPE', 'local'),
+        'cascade_delete' => env('FILE_LIBRARY_CASCADE_DELETE', true),
         'local_path' => env('FILE_LIBRARY_LOCAL_PATH'),
-        'file_service' => env('FILE_LIBRARY_FILE_SERVICE', 'A17\Twill\Services\FileLibrary\Disk'),
+        'file_service' => env('FILE_LIBRARY_FILE_SERVICE', 'A17\Twill\Services\FileLibrary\Local'),
         'acl' => env('FILE_LIBRARY_ACL', 'public-read'),
         'filesize_limit' => env('FILE_LIBRARY_FILESIZE_LIMIT', 50),
         'allowed_extensions' => [],

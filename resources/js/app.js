@@ -9,5 +9,9 @@ Vue.component('contact_map', require('./components/ContactMap.vue'));
 Vue.component('reservation_booking_form', require('./components/ReservationBookingForm.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+    mounted() {
+        console.log(process.env.MIX_DEMO)
+    }
 });
