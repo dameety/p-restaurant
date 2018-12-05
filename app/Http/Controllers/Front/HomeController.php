@@ -9,7 +9,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        dd(app('db'));
         return view('front.index');
     }
 }
