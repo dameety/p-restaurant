@@ -38,22 +38,5 @@ class ReservationController extends ModuleController
             'title' => 'Time',
             'field' => 'time',
         ],
-//        'subtitle' => [
-//            'title' => 'Subtitle',
-//            'field' => 'subtitle',
-//            'sort' => true, // column is sortable
-//            'visible' => false, // will be available from the columns settings dropdown
-//        ],
-//        'relationName' => [ // relation column
-//            'title' => 'Relation name',
-//            'sort' => true,
-//            'relationship' => 'relationName',
-//            'field' => 'relationFieldToDisplay'
-//        ],
-//        'presenterMethodField' => [ // presenter column
-//            'title' => 'Field title',
-//            'field' => 'presenterMethod',
-//            'present' => true,
-//        ]
     ];
 }
