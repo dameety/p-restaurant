@@ -1405,7 +1405,7 @@ var app = new Vue({
     el: '#app',
 
     mounted: function mounted() {
-        console.log("letsbehere");
+        console.log("letsbehere-----remove this later");
     }
 });
 
@@ -30906,12 +30906,19 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "form",
-    { staticClass: "wrap-form-reservation size22 m-l-r-auto" },
+    {
+      staticClass: "wrap-form-reservation size22 m-l-r-auto",
+      on: {
+        submit: function($event) {
+          _vm.store()
+        }
+      }
+    },
     [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-4" }, [
           _c("span", { staticClass: "txt9" }, [
-            _vm._v("\n\t\t\t\t\t\t\tName\n\t\t\t\t\t\t")
+            _vm._v("\n                    Name\n                ")
           ]),
           _vm._v(" "),
           _c(
@@ -30945,7 +30952,7 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "col-md-4" }, [
           _c("span", { staticClass: "txt9" }, [
-            _vm._v("\n\t\t\t\t\t\t\tEmail\n\t\t\t\t\t\t")
+            _vm._v("\n                    Email\n                ")
           ]),
           _vm._v(" "),
           _c(

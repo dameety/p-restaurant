@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Ajax;
 
-use App\Mail\newEnquiry;
 use App\Models\Enquiry;
+use App\Mail\newEnquiry;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\AjaxController;
 
