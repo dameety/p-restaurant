@@ -40,7 +40,5 @@ return [
         'acl' => env('FILE_LIBRARY_ACL', 'public-read'),
         'filesize_limit' => env('FILE_LIBRARY_FILESIZE_LIMIT', 50),
         'allowed_extensions' => [],
-    ],
-
-
+    ]
 ];
