@@ -5,8 +5,8 @@
                 <div class="col-md-4">
                     <!-- Date -->
                     <span class="txt9">
-									Date
-								</span>
+                        Date
+                    </span>
 
                     <div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <input v-model="newReservation.date" class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
@@ -17,8 +17,8 @@
                 <div class="col-md-4">
                     <!-- Time -->
                     <span class="txt9">
-									Time
-								</span>
+                        Time
+                    </span>
 
                     <div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <!-- Select2 -->
@@ -49,12 +49,12 @@
                 <div class="col-md-4">
                     <!-- People -->
                     <span class="txt9">
-									People
-								</span>
+                        People
+                    </span>
 
                     <div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <!-- Select2 -->
-                        <select v-model="newReservation.people" class="selection-1" name="people">
+                        <select v-model="newReservation.number_of_people" class="selection-1" name="people">
                             <option>1 person</option>
                             <option>2 people</option>
                             <option>3 people</option>
@@ -76,8 +76,8 @@
                 <div class="col-md-4">
                     <!-- Name -->
                     <span class="txt9">
-									Name
-								</span>
+                        Name
+                    </span>
 
                     <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <input v-model="newReservation.name" class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name">
@@ -87,8 +87,8 @@
                 <div class="col-md-4">
                     <!-- Phone -->
                     <span class="txt9">
-									Phone
-								</span>
+                        Phone
+                    </span>
 
                     <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <input v-model="newReservation.phone" class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
@@ -98,8 +98,8 @@
                 <div class="col-md-4">
                     <!-- Email -->
                     <span class="txt9">
-									Email
-								</span>
+                        Email
+                    </span>
 
                     <div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <input v-model="newReservation.email" class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
@@ -122,8 +122,8 @@
                 <div class="col-md-6">
                     <!-- Date -->
                     <span class="txt9">
-									Date
-								</span>
+                        Date
+                    </span>
 
                     <div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <input v-model="newReservation.date" class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
@@ -167,7 +167,7 @@
 
                     <div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <!-- Select2 -->
-                        <select v-model="newReservation.numberOfPeople" class="selection-1" name="people">
+                        <select v-model="newReservation.number_of_people" class="selection-1" name="people">
                             <option>1 person</option>
                             <option>2 people</option>
                             <option>3 people</option>
@@ -205,8 +205,8 @@
 
                     <!-- Email -->
                     <span class="txt9">
-									Email
-								</span>
+                        Email
+                    </span>
 
                     <div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
                         <input v-model="newReservation.email" class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
@@ -239,7 +239,7 @@
                     date: "",
                     phone: "",
                     email: "",
-                    numberOfPeople: ""
+                    number_of_people: ""
                 }
             }
         },

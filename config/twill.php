@@ -5,22 +5,6 @@ return [
     'users_table' => 'twill_users',
     'password_resets_table' => 'twill_password_resets',
 
-    'dashboard' => [
-        'modules' => [
-            'bookings' => [ // module name if you added a morph map entry for it, otherwise FQCN of the model (eg. App\Models\Project)
-                'name' => 'bookings', // module name
-//                'label' => '', // optional, if the name of your module above does not work as a label
-                'label_singular' => 'booking', // optional, if the automated singular version of your name/label above does not work as a label
-//                'routePrefix' => '', // optional, if the module is living under a specific routes group
-                'count' => true, // show total count with link to index of this module
-                'create' => true, // show link in create new dropdown
-                'activity' => true, // show activities on this module in actities list
-                'draft' => true, // show drafts of this module for current user
-                'search' => true, // show results for this module in global search
-            ],
-        ]
-    ],
-
     'enabled' => [
         'users-management' => true,
         'media-library' => true,
@@ -31,17 +15,17 @@ return [
         'buckets' => true,
         'users-image' => false,
         'users-description' => false,
-        'site-link' => false,
-        'settings' => false,
+        'site-link' => true,
+        'settings' => true,
         'activitylog' => true,
     ],
 
     'media_library' => [
         'disk' => 'libraries',
-        'endpoint_type' => env('MEDIA_LIBRARY_ENDPOINT_TYPE', 's3'),
-        'cascade_delete' => env('MEDIA_LIBRARY_CASCADE_DELETE', false),
+        'endpoint_type' => env('MEDIA_LIBRARY_ENDPOINT_TYPE', 'local'),
+        'cascade_delete' => env('MEDIA_LIBRARY_CASCADE_DELETE', true),
         'local_path' => env('MEDIA_LIBRARY_LOCAL_PATH'),
-        'image_service' => env('MEDIA_LIBRARY_IMAGE_SERVICE', 'A17\Twill\Services\MediaLibrary\Imgix'),
+        'image_service' => env('MEDIA_LIBRARY_IMAGE_SERVICE', 'A17\Twill\Services\MediaLibrary\Local'),
         'acl' => env('MEDIA_LIBRARY_ACL', 'private'),
         'filesize_limit' => env('MEDIA_LIBRARY_FILESIZE_LIMIT', 50),
         'allowed_extensions' => ['svg', 'jpg', 'gif', 'png', 'jpeg'],
@@ -49,10 +33,10 @@ return [
 
     'file_library' => [
         'disk' => 'libraries',
-        'endpoint_type' => env('FILE_LIBRARY_ENDPOINT_TYPE', 's3'),
-        'cascade_delete' => env('FILE_LIBRARY_CASCADE_DELETE', false),
+        'endpoint_type' => env('FILE_LIBRARY_ENDPOINT_TYPE', 'local'),
+        'cascade_delete' => env('FILE_LIBRARY_CASCADE_DELETE', true),
         'local_path' => env('FILE_LIBRARY_LOCAL_PATH'),
-        'file_service' => env('FILE_LIBRARY_FILE_SERVICE', 'A17\Twill\Services\FileLibrary\Disk'),
+        'file_service' => env('FILE_LIBRARY_FILE_SERVICE', 'A17\Twill\Services\FileLibrary\Local'),
         'acl' => env('FILE_LIBRARY_ACL', 'public-read'),
         'filesize_limit' => env('FILE_LIBRARY_FILESIZE_LIMIT', 50),
         'allowed_extensions' => [],
