@@ -22,12 +22,17 @@ class ReservationsController extends AjaxController
 
     public function store(ReservationRequest $request)
     {
-        $reservation = Reservation::create($request->all());
+        $reservation = $this->reservationRepo->create($request->all());
 
-        Mail::to($reservation->email)->send(new ReservationReceived($reservation));
+        activity()->performedOn($reservation)->log('created');
+
+        $object = json_decode($reservation, true);
+        $reservation = new Reservation($object);
+
+        Mail::to($reservation->email)->send(new ReservationReceived($reservation) );
 
         Notification::route('mail', config('app.email'))
-            ->notify(new NewReservation($reservation));
+                ->notify(new NewReservation($reservation));
 
         return $this->sendResponse($reservation, 'Your reservation has been received successfully.');
     }
