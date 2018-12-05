@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Repositories\ChefRepository;
 
 class PagesController extends Controller
 {
@@ -12,9 +13,12 @@ class PagesController extends Controller
         return view('front.menu');
     }
 
-    public function about()
+    public function about(ChefRepository $chef)
     {
-        return view('front.about');
+        $data = $chef->get();
+        return view('front.about', [
+            'chefs' => $data
+        ]);
     }
 
     public function contact()
