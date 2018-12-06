@@ -17,7 +17,7 @@ class CreateReservationsTables extends Migration
             $table->string('published')->nullable();
 
             // feel free to modify the name of this column, but title is supported by default (you would need to specify the name of the column Twill should consider as your "title" column in your module controller if you change it)
-            $table->string('title', 200)->nullable();
+            $table->string('title', 200)->nullable(); //remove this
 
             // add those 2 colums to enable publication timeframe fields (you can use publish_start_date only if you don't need to provide the ability to specify an end date)
             // $table->timestamp('publish_start_date')->nullable();

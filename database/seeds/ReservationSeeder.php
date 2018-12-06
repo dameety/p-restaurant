@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker\Factory as Faker;
 
-class UserSeeder extends Seeder
+class ReservationSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,9 +12,8 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::statement("SET foreign_key_checks = 0");
-        DB::table('users')->delete();
-        $faker = Faker::create();
+        DB::table('reservations')->delete();
 
-        factory(App\User::class, 13)->create();
+        factory(\App\Models\Reservation::class, 31)->create();
     }
 }
