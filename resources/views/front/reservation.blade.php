@@ -3,8 +3,7 @@
 @section('title', 'Reservation')
 
 @section('content')
-
-    <!-- Title Page -->
+    
     <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15"
          style="background-image: url({{asset('front/images/bg-title-page-02.jpg')}});">
         <h2 class="tit6 t-center">
@@ -29,7 +28,7 @@
                     </div>
 
                     <reservation_booking_form
-                        page="reservation">
+                        page="reservation.blade.php">
                     </reservation_booking_form>
                 </div>
             </div>

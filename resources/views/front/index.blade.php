@@ -312,7 +312,7 @@
                     </div>
 
                     <reservation_booking_form
-                            page="home">
+                            page="home.blade.php">
                     </reservation_booking_form>
 
                 </div>
