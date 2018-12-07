@@ -10,8 +10,13 @@ class CreateEnquiriesTables extends Migration
         Schema::create('enquiries', function (Blueprint $table) {
             
             // this will create an id, a "published" column, and soft delete and timestamps columns
-            createDefaultTableFields($table);
-            
+//            createDefaultTableFields($table);
+
+            $table->timestamps();
+            $table->softDeletes();
+            $table->increments('id');
+            $table->string('published')->nullable();
+
             // feel free to modify the name of this column, but title is supported by default (you would need to specify the name of the column Twill should consider as your "title" column in your module controller if you change it)
             $table->string('name', 200)->nullable();
             $table->string('email', 200)->nullable();
